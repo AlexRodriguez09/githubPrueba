@@ -105,4 +105,5 @@ jobs:
           printenv
           echo Imprimir si ant tiene configuracion alguna
           #cat /usr/share/ant
-          ant -v
+          ls /usr/lib/jvm/java5/jdk1.5.0_1
+          ant -version
