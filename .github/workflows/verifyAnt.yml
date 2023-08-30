@@ -104,4 +104,4 @@ jobs:
           echo Imprimiar las variables de entorno
           printenv
           echo Imprimir si ant tiene configuracion alguna
-          ls /usr/share/ant
+          ls /usr/share/
