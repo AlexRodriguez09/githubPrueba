@@ -100,6 +100,8 @@ jobs:
           echo Cambiar la variable de entorno de java
           sudo chown -R root:root /usr/lib/jvm/
           export JAVA_HOME_11_X64=/usr/lib/jvm/java5/jdk1.5.0_12
-          export ANT_HOME=/opt/ant/apache-ant-1.7.1
+          #export ANT_HOME=/opt/ant/apache-ant-1.7.1
           echo Imprimiar las variables de entorno
           printenv
+          echo Imprimir si ant tiene configuracion alguna
+          ls /usr/share/ant
