@@ -90,7 +90,7 @@ jobs:
           ls
           echo Lo que hay en la segunda ruta
           ls /usr/lib/jvm/
-          rm java-1.11.0-openjdk-amd64
-          rm java-11-openjdk-amd64
+          rm -r java-1.11.0-openjdk-amd64
+          rm -r java-11-openjdk-amd64
           cat default-java
 
