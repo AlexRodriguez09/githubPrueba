@@ -23,4 +23,5 @@ jobs:
       - name: Uninstall Java 11
         run: | 
           sudo apt-get purge temurin-11-jdk
-          echo printenv
+          echo IMPRIMIENDO VARIABLES
+          
