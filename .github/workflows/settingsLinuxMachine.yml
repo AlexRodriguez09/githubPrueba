@@ -1,0 +1,26 @@
+name: ConfiguringEnvironment
+env:
+  JAVA_TOOL_OPTIONS: -Dfile.encoding=iso-8859-1 -Xms256m -Xmx800m -XX:MaxPermSize=200m -Djava.net.preferIPv4Stack=true -Duser.timezone=America/Bogota -Xms512m -Xmx768m -Xss256k -XX:MaxPermSize=256M -XX:+ShowMessageBoxOnError
+  ANT_OPTS: -Dfile.encoding=iso-8859-1 
+  JAVA_HOME: /usr/lib/jvm/java5/jdk1.5.0_12
+on: workflow_dispatch
+
+permissions:
+  id-token: write
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  deployQA:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          clean: false  # This is required to keep the build files
+
+      - name: Uninstall Java 11
+        run: | 
+          sudo apt-get purge temurin-11-jdk
+          echo printenv
