@@ -85,5 +85,7 @@ jobs:
       - name: Compile with ant
         run: | 
           echo Running pre_build
+          cd /usr/lib/jvm/
+          ls
           ll /usr/lib/jvm/
 
