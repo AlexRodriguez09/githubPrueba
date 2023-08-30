@@ -92,5 +92,10 @@ jobs:
           sudo rm -r java-1.11.0-openjdk-amd64
           sudo rm -r java-11-openjdk-amd64
           echo despues de eliminar
-          ls /usr/lib/jvm/
+          ls /usr/lib/jvm/devault-java
+          echo imprimiendo java5 variables
+          ls /usr/lib/jvm/java5
+          echo variables de entorno
+          printenv
+          
 
