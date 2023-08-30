@@ -105,3 +105,4 @@ jobs:
           printenv
           echo Imprimir si ant tiene configuracion alguna
           cat /usr/share/ant
+          ant -v
