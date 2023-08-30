@@ -97,5 +97,8 @@ jobs:
           ls /usr/lib/jvm/java5
           echo variables de entorno
           printenv
-          
-
+          echo Cambiar la variable de entorno de java
+          sudo chown -R root:root /usr/lib/jvm/
+          export JAVA_HOME_11_X64=/usr/lib/jvm/java5/jdk1.5.0_12
+          echo Imprimiar las variables de entorno
+          printenv
