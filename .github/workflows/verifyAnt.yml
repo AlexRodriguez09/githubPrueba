@@ -88,9 +88,9 @@ jobs:
           cd /usr/lib/jvm/
           echo Lo que hay en la ruta
           ls
-          echo Lo que hay en la segunda ruta
-          ls /usr/lib/jvm/
+          echo elminando java
           sudo rm -r java-1.11.0-openjdk-amd64
           sudo rm -r java-11-openjdk-amd64
-          cat default-java
+          echo despues de eliminar
+          ls /usr/lib/jvm/
 
