@@ -105,5 +105,5 @@ jobs:
           printenv
           echo Imprimir si ant tiene configuracion alguna
           #cat /usr/share/ant
-          ls usr/lib/jvm/temurin-11-jdk-amd64
+          cat usr/lib/jvm/temurin-11-jdk-amd64
           ant -version
