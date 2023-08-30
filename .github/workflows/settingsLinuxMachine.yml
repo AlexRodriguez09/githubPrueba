@@ -24,4 +24,5 @@ jobs:
         run: | 
           sudo apt-get purge temurin-11-jdk
           echo IMPRIMIENDO VARIABLES
+          printenv
           
