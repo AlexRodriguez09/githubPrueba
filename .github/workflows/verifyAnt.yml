@@ -86,6 +86,8 @@ jobs:
         run: | 
           echo Running pre_build
           cd /usr/lib/jvm/
+          echo Lo que hay en la ruta
           ls
-          ll /usr/lib/jvm/
+          echo Lo que hay en la segunda ruta
+          ls /usr/lib/jvm/
 
