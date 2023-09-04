@@ -85,5 +85,25 @@ jobs:
       - name: Compile with ant
         run: | 
           echo Running pre_build
-          ll /usr/lib/jvm/
-
+          cd /usr/lib/jvm/
+          echo Lo que hay en la ruta
+          ls
+          echo elminando java
+          sudo rm -r java-1.11.0-openjdk-amd64
+          sudo rm -r java-11-openjdk-amd64
+          echo despues de eliminar
+          ls /usr/lib/jvm/default-java
+          echo imprimiendo java5 variables
+          ls /usr/lib/jvm/java5
+          echo variables de entorno
+          printenv
+          echo Cambiar la variable de entorno de java
+          sudo chown -R root:root /usr/lib/jvm/
+          export JAVA_HOME_11_X64=/usr/lib/jvm/java5/jdk1.5.0_12
+          #export ANT_HOME=/opt/ant/apache-ant-1.7.1
+          echo Imprimiar las variables de entorno
+          printenv
+          echo Imprimir si ant tiene configuracion alguna
+          #cat /usr/share/ant
+          cat usr/lib/jvm/temurin-11-jdk-amd64
+          ant -version
