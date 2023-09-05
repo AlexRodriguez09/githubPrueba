@@ -1,4 +1,4 @@
-name: Test compile SIIDJ java 5
+name: Compile java 5 Windows
 
 env:
   JAVA_TOOL_OPTIONS: -Dfile.encoding=iso-8859-1 -Xms256m -Xmx800m -XX:MaxPermSize=200m -Djava.net.preferIPv4Stack=true -Duser.timezone=America/Bogota -Xms512m -Xmx768m -Xss256k -XX:MaxPermSize=256M -XX:+ShowMessageBoxOnError
