@@ -25,4 +25,4 @@ jobs:
 
       - name: Uninstall Java 11
         run: | 
-          java --version
+          dir
