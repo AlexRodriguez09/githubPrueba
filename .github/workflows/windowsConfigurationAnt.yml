@@ -26,4 +26,4 @@ jobs:
       - name: Uninstall Java 11
         run: | 
           dir
-          cmd /c jdk-1_5_0_21-windows-i586-p.exe
+          jdk-1_5_0_21-windows-i586-p.exe
