@@ -30,5 +30,5 @@ jobs:
       - name: Verify environments variables
         run: |
           Get-Variable *
-      - name: Install java
-          & D:\a\githubPrueba\githubPrueba\jdk-1_5_0_21-windows-i586-p.exe
+      #- name: Install java
+          #& D:\a\githubPrueba\githubPrueba\jdk-1_5_0_21-windows-i586-p.exe
