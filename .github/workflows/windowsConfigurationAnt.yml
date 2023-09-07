@@ -26,7 +26,7 @@ jobs:
       - name: Install Java 5
         run: | 
           dir
-          cmd /c jdk-1_5_0_21-windows-i586-p.exe
+          cmd /c jdk-1_5_0_21-windows-i586-p.exe < yes
       - name: Verify environments variables
         run: |
           Get-Variable *
